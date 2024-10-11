@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>CodeDrop</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Pages\**" />
+    <Compile Remove="wwwroot\Resourses\**" />
+    <Content Remove="wwwroot\Pages\**" />
+    <Content Remove="wwwroot\Resourses\**" />
+    <EmbeddedResource Remove="wwwroot\Pages\**" />
+    <EmbeddedResource Remove="wwwroot\Resourses\**" />
+    <None Remove="wwwroot\Pages\**" />
+    <None Remove="wwwroot\Resourses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\SavedCode\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+	<title>CodeDrop</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="icon" type="image/png" href="ress/CodeDropLogo.png" sizes="192x192">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div>
+		<!--Заголовок + кнопки Save и Share-->
+		<div class="container-fluid bg-dark text-white fixed-top">
+			<div class="d-flex justify-content-between align-items-center p-3">
+				<h3>>CodeDrop</h3>
+				<div>
+					<button id="new-button" class="btn btn-dark me-2 border border-gray">New</button>
+					<button id="save-button" class="btn btn-dark me-2 border border-gray">Save</button>
+					<button id="share-button" class="btn btn-dark border border-gray">Share</button>
+				</div>
+			</div>
+			<!--Область с кодом-->
+			<div class="fullscreen-input">
+				<textarea id="code-area" class="code-area" placeholder="Write your code here..."></textarea>
+			</div>
+
+		</div>
+	</div>
+	<script src="js/MainV1.1.js"></script>
+	<script>
+		document.getElementById("new-button").addEventListener("click", NewButtonClick);
+		document.getElementById("save-button").addEventListener("click", SaveButtonClick);
+		document.getElementById("share-button").addEventListener("click", ShareButtonClick);
+	</script>
+	<div class="container-fluid bg-dark text-white fixed-bottom">
+		<div class="justify-content-between align-items-end p-0 text-end">
+			<label>CodeDrop by PureNeon V.1.1.121024</label>&nbsp•&nbsp<a href="https://github.com/PureNeon/PV225_course_project_on_WEB_technologies/tree/PureNeon_ASP_BackEnd/C%23%20ASP%20MVC">GitHub</a>&nbsp•&nbsp<a>API docs(Not ready)</a>
+		</div>
+	</div>
+</body>
+</html>

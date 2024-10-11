@@ -1,0 +1,16 @@
+﻿.fullscreen-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    height: calc(100vh - 97px); /* Высота блока 100% от высоты окна */
+    background-color: #f8f9fa; /* Цвет фона блока */
+    border: 1px solid #ccc; /* Граница блока */
+}
+
+.code-area {
+    width: 100%; /* Ширина текстового поля на всю ширину блока */
+    height: 100%; /* Высота текстового поля */
+    resize: none; /* Запрет изменения размера текстового поля */
+    box-sizing: border-box;
+}
