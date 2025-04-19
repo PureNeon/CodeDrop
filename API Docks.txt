@@ -1,0 +1,11 @@
+[Get]  -> {SiteURL}/api ->> Return service status ("CodeDrop API is available" or "Site not found") : Use for check service status
+
+       -> {SiteURL}/api/{ShareCode(MD5)} ->> Return text content or 404 Not Found                   : Use for get text content from service
+
+
+
+[Post] -> {SiteURL}/api <- {StringMessage (Text)}                                                   : Use for send text content in service
+                        ->> Return ShareCode(MD5 HashKey)
+
+       -> {SiteURL}/api/{ShareCode} <- {StringMessage (Text)}                                       : Use for overwrite text content
+                        ->> Return ShareCode(MD5 HashKey)
